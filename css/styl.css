@@ -1,0 +1,93 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18.7.2020, 14:07:11
+    Author     : sid
+*/
+
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+}
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+  background: #eee; 
+}
+th { 
+  background: #333; 
+  color: white; 
+  font-weight: bold; 
+}
+td, th { 
+  padding: 6px; 
+  border: 1px solid #ccc; 
+  text-align: left; 
+}
+select {
+  margin-bottom: 1em;
+  padding: .25em;
+  border: 0;
+  border-bottom: 2px solid currentcolor; 
+  font-weight: bold;
+  letter-spacing: .15em;
+  border-radius: 0;
+  &:focus, &:active {
+    outline: 0;
+    border-bottom-color: red;
+  }
+}
+.tlacitko {
+   background-color: #555555;
+  border: 0;
+  border-bottom: 2px solid currentcolor; 
+    color: white;
+  padding: .45em;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.tlacitko:hover {opacity: 1}
+
+.mazaci_tlacitko {
+	background-color: #ff0000;
+   border: 0;
+  border-bottom: 2px solid currentcolor; 
+  color: white;
+  padding: .45em;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mazaci_tlacitko:hover {opacity: 1}
+
+p.odkaz {
+   font-size: 12px;
+   color: blue;
+}
+
+p.nazev {
+	font-size: 12px;
+   font-weight: bold;
+}
+
+p.datum {
+   font-size: 12px;
+   color: red;
+}

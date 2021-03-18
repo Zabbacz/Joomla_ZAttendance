@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>ZAttendance</name>
+    <author>Zabba</author>
+    <version>1.0.0</version>
+    <description>Dochazka SG.</description>
+    <files>
+        <filename>mod_zattendance.xml</filename>
+        <filename module="mod_zattendance">mod_zattendance.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+        <folder>sql</folder>
+        <folder>css</folder>
+    </files>
+    <config>
+    </config>
+<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/mysql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/mysql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+</extension>
